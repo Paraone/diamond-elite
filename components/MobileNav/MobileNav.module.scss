@@ -1,0 +1,106 @@
+.mobile-nav {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .hamburger {
+        border: none;
+        background-color: unset;
+        text-align: center;
+        width: 60px;
+        height: 60px;
+    
+        div {
+            width: 35px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 0;
+        }
+    }
+}
+
+.mobile-nav-login,
+.mobile-user-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+
+    form {
+        flex-direction: column;
+    }
+
+    > div, 
+    > a, 
+    input, 
+    span,
+    button {
+        margin-top: 10px;
+
+        ul {
+            width: 100%;
+            align-self: flex-start;
+            display: block;
+            margin: 0;
+            padding: 0;
+            position: relative;
+
+            li {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    a:active {
+        background-color: lightgrey;
+    }
+}
+
+.mobile-user-menu {
+    a,
+    div {
+
+        border-top: 1px solid rgb(72, 72, 72);
+        width: 100%;
+        text-align: left;
+
+        &:visited{
+            color: black;
+        }
+
+        > a {
+            border: unset;
+        }
+    }
+}
+
+.hide {
+    transform: translateX(-500px);
+}
+
+.modal-menu {
+    z-index: 400;
+    position: fixed;
+    flex-direction: column;
+    padding: 10px;
+    width: calc(100% - 20px);
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    overflow: scroll;
+    transition: transform .2s ease-in;
+
+    a {
+        color: grey;
+    }
+
+    .close-btn {
+        width: 100%;
+        text-align: right;
+    }
+}

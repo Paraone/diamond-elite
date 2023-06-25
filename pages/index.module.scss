@@ -1,0 +1,55 @@
+/* MOBILE STYLES */
+.root{
+    a {
+        color: grey;
+    }
+    h1 {
+        text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .find-btn {
+        display: inline-block;
+        padding: 10px 30px;
+        margin: 5px;
+        border: 1px solid black;
+        border-radius: 5px;
+        transition: background-color .15s ease-in;
+        color: black;
+    
+        &:hover {
+            background-color: lightgrey;
+        }
+    
+        &:active {
+            border: 1px solid grey;
+            color: white;
+            background-color: black;
+        }
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width: 481px) {
+    .root {
+        h1{
+            text-align: left;
+        }
+
+        .buttons {
+            justify-content: flex-start;
+        }
+    }
+}
+
+/* DESKTOP SMALL */
+@media only screen and (min-width: 769px) {
+}
+
+/* DESKTOP LARGE */
+@media only screen and (min-width: 1025px) {
+}

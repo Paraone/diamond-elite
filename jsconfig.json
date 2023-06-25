@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+        "~components": ["components/index"],
+        "~hooks": ["customHooks/index"],
+        "~components/*": ["components/*"],
+        "~json": ["json/index"],
+        "~middleware": ["middleware/index"],
+        "~models": ["models/index"],
+        "~pages": ["pages/index"],
+        "~constants": ["constants/index"],
+        "~controllers/*": ["controllers/*"]
+        }
+    }
+}

@@ -1,0 +1,26 @@
+/* MOBILE */
+.businesses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .business {
+        margin: 8px;
+        
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width: 481px) {
+}
+
+/* DESKTOP SMALL */
+@media only screen and (min-width: 769px) {
+}
+
+/* DESKTOP LARGE */
+@media only screen and (min-width: 1025px) {
+}

@@ -1,0 +1,71 @@
+
+body {
+  font-family: 'SF Pro Text', 'SF Pro Icons', system-ui, 'Helvetica Neue', 'Helvetica';
+  font-size: 16px;
+  margin: 0 auto;
+  
+  #__next {
+    padding: 20px 20px 60px;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+  }
+}
+
+form label {
+  display: flex;
+  justify-content: space-between;
+  max-width: 220px;
+}
+
+a {
+    color: grey;
+    display: inline-block;
+    background-color: white;
+    background-color: white;
+    text-decoration: none;
+    font-size: 1rem;
+
+    &:visited {
+        color: black;
+    }
+}
+
+.page {
+  opacity: 0;
+  transition: opacity .25s ease-in;
+}
+
+@media only screen and (min-width: 481px) {
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  body  {
+
+    #__next {
+      margin: 0 auto;
+      width: 990px;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  // html {
+  //   color-scheme: dark;
+  // }
+  // body {
+  //   color: white;
+  //   background: black;
+  // }
+}

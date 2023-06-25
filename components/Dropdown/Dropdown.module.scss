@@ -1,0 +1,51 @@
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    align-items: center;
+
+    &:hover {
+        .list {
+            display: block;
+        }
+    }
+
+    .heading {
+        display: inline-block;
+    }
+
+    ul {
+        display: none;
+        position: absolute;
+        width: 140px;
+        text-align: center;
+        margin: 20px auto 0;
+        padding: 0;
+
+        li {
+            margin: 0 auto;
+            text-decoration: none;
+            list-style-type: none;
+            width: 100%;
+            padding: 0 10px
+        }
+
+        a {
+            width: 100%;
+            transition: background-color .2s ease-in;
+            &:hover {
+                background-color: lightgrey;
+            }
+        }
+    }
+
+    a {
+        display: inline-block;
+        background-color: white;
+        text-decoration: none;
+
+        &:visited {
+            color: black;
+        }
+    }
+}
